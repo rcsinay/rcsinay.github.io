@@ -20,4 +20,26 @@ html .ui.menu {
   width: 100%;
   display: none; }
 
+#splash {
+  padding-top: 0;
+  margin-top: 5vh;
+  height: 94vh;
+  background-image: url("../images/bg1.jpg");
+  background-position: center center;
+  background-size: cover; }
+  #splash .ui.segment {
+    box-shadow: 3px 3px 2px rgba(34, 36, 38, 0.3);
+    background-color: rgba(224, 124, 55, 0.75);
+    border: none;
+    border-radius: 1px;
+    color: #fafafa;
+    text-align: center;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 1.7px; }
+    #splash .ui.segment .ui.button {
+      background-color: #EDB33F;
+      color: #fafafa;
+      margin-top: 20px; }
+
 /*# sourceMappingURL=main.css.map */
