@@ -15,4 +15,9 @@ html .ui.menu {
 .item {
   font-size: 16px; }
 
+.ui.vertical.menu {
+  margin-top: 70px !important;
+  width: 100%;
+  display: none; }
+
 /*# sourceMappingURL=main.css.map */
