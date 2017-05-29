@@ -27,9 +27,11 @@ html {
 }
 
 .ui.vertical.menu{
-	margin-top: 70px !important;
+	margin-top: 82px !important;
 	width: 100%;
 	display: none;
+    position: fixed;
+    z-index: 10;
 }
 
 #splash {

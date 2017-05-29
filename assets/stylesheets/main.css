@@ -16,9 +16,11 @@ html .ui.menu {
   font-size: 16px; }
 
 .ui.vertical.menu {
-  margin-top: 70px !important;
+  margin-top: 82px !important;
   width: 100%;
-  display: none; }
+  display: none;
+  position: fixed;
+  z-index: 10; }
 
 #splash {
   padding-top: 0;
