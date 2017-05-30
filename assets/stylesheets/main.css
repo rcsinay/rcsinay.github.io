@@ -44,15 +44,15 @@ html .ui.menu {
       color: #fafafa;
       margin-top: 20px; }
 
-.about {
+#about {
   padding-top: 40px;
   padding-bottom: 40px; }
-  .about .row {
+  #about .row {
     margin-top: 20px;
     margin-bottom: 20px; }
-  .about h2 {
+  #about h2 {
     font-size: 34px; }
-  .about p {
+  #about p {
     font-size: 20px; }
 
 #vision {
