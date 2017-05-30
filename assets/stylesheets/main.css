@@ -44,4 +44,35 @@ html .ui.menu {
       color: #fafafa;
       margin-top: 20px; }
 
+.about {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  .about .row {
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .about h2 {
+    font-size: 34px; }
+  .about p {
+    font-size: 20px; }
+
+#vision {
+  margin-top: 20px;
+  background-color: #E07C37; }
+  #vision .ui.basic.segment {
+    text-align: center !important; }
+  #vision .ui.header {
+    color: #fafafa; }
+
+.column {
+  display: flex !important; }
+
+.centered {
+  margin: 0 auto !important; }
+
+.orange-bg {
+  background-color: #E07C37 !important; }
+
+.white {
+  color: #fafafa; }
+
 /*# sourceMappingURL=main.css.map */
