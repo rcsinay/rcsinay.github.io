@@ -3,6 +3,10 @@ $(document).ready(function(){
         e.preventDefault();
 		$('.ui.vertical.menu').transition('slide down');
 	});
+
+	$('.ui.vertical.navbar.menu .item').click(function(){
+		$('.ui.vertical.menu').transition('slide down');
+	})
     
 	$('.ui.dropdown').dropdown();
 
