@@ -28,6 +28,7 @@ html {
 
 .ui.vertical.menu{
 	margin-top: 82px !important;
+    top: -14px !important;
 	width: 100%;
 	display: none;
     position: fixed;
@@ -53,11 +54,24 @@ html {
         font-size: 32px;
         line-height: 40px;
         letter-spacing: 1.7px;
+        // padding-bottom: 20px;
         .ui.button {
             background-color: $secondary-color;
             color: #fafafa;
             margin-top: 20px;
         }
+    }
+}
+
+.social-links {
+    .facebook {
+        color: #3b5998;
+    }
+    .linkedin {
+        color: #0077b5;
+    }
+    .instagram {
+        color: #f56040;
     }
 }
 
@@ -104,4 +118,86 @@ html {
 
 .white {
 	color: #fafafa;
+}
+
+#team {
+
+    h2 {
+        font-size: 34px;
+    }
+
+    .sub.header {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+#expertise {
+    padding-top: 40px;
+    // padding-bottom: 40px;
+    h2 {
+        font-size: 34px;
+        color: $primary-color;
+    }
+
+    h3 {
+        font-size: 28px;
+        color: #333;
+    }
+
+    .ui.segment {
+        margin: 0 auto;
+    }
+
+    i.icon {
+        margin: 0 auto;
+    }
+
+    .row.bottom {
+        padding-top: 0;
+    }
+}
+
+.ui.divider {
+    margin-bottom: 80px;
+}
+
+#story {
+    h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 20px;
+        letter-spacing: 1.2px;
+        line-height: 40px;
+    }
+    padding-bottom: 80px;
+}
+
+#footer {
+    background-color: #333;
+    padding-top: 20px;
+    .social {
+        padding-bottom: 0;
+        margin-bottom: -10px;
+    }
+
+    .emails {
+        padding-bottom: 0;
+        margin-bottom: -10px;
+        font-size: 18px !important;
+    }
+    
+    .icon {
+        color: #fafafa;
+    }
+    .ui.basic.segment {
+        font-size: 14px;
+    }
+    color: #fafafa;
+    // height: 100px;
 }
