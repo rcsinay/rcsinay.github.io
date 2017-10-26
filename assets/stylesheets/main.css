@@ -10,10 +10,12 @@ html .ui.menu {
 .item.brand {
   color: #E07C37 !important;
   font-size: 18px;
-  letter-spacing: 1.5px; }
+  letter-spacing: 1.5px;
+  font-weight: normal !important; }
 
 .item {
-  font-size: 16px; }
+  font-size: 16px;
+  font-weight: bold !important; }
 
 .ui.vertical.menu {
   margin-top: 82px !important;
@@ -23,11 +25,16 @@ html .ui.menu {
   position: fixed;
   z-index: 10; }
 
+#particles-js {
+  height: 100vh;
+  width: 100%; }
+
 #splash {
+  position: absolute;
+  width: 100%;
   padding-top: 0;
   margin-top: 5vh;
   height: 94vh;
-  background-image: url("../images/bg1.jpg");
   background-position: center center;
   background-size: cover; }
   #splash .ui.segment {
@@ -46,11 +53,11 @@ html .ui.menu {
       margin-top: 20px; }
 
 .social-links .facebook {
-  color: #3b5998; }
+  color: #E07C37; }
 .social-links .linkedin {
-  color: #0077b5; }
+  color: #E07C37; }
 .social-links .instagram {
-  color: #f56040; }
+  color: #E07C37; }
 
 #about {
   padding-top: 40px;

@@ -10,6 +10,10 @@ $(document).ready(function(){
     
 	$('.ui.dropdown').dropdown();
 
+	particlesJS.load('particles-js', 'assets/javascripts/particlesjs-config.json', function() {
+		console.log('callback - particles.js config loaded');
+	  });
+
 	// Select all links with hashes
 	$('a[href*="#"]')
 	// Remove links that don't actually link to anything
