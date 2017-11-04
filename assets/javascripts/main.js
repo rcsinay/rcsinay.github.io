@@ -10,6 +10,26 @@ $(document).ready(function(){
     
 	$('.ui.dropdown').dropdown();
 
+	$('#story .row').visibility({
+		onTopVisible: function(){
+			$(this).find('.image').transition({
+				animation: 'fade in',
+				duration: '1.5s'
+			});
+
+			$(this).find('p').transition({
+				animation: 'fade in',
+				duration: '2.5s'
+			}
+		);
+
+		$(this).find('.ui.divider').transition({
+			animation: 'fade in',
+			duration: '2.5s'
+		}
+	);
+		}
+	})
 	particlesJS.load('particles-js', 'assets/javascripts/particlesjs-config.json', function() {
 		console.log('callback - particles.js config loaded');
 	  });
