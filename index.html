@@ -294,14 +294,15 @@
 					</div>
 					
 				</div>
-		</div>
-		
-		<div class="ui grid container stackable" id="contact">
-			<div class="two column row">
-				<div class="column">
-					<div class="ui segment">
-						<form id="form" class="ui form">
-							<h2 class="ui header">Contact us</h2>
+			</div>
+			
+			<div class="ui grid container stackable" id="contact">
+				<div class="two column row">
+					<div class="column">
+						<div class="ui segment">
+							<form id="form" class="ui form">
+								<h2 class="ui header">Contact us</h2>
+								<div class="ui success message" style="display: none;">Thank you for contacting Margherita Lotti! We'll be attending to you as soon as possible.</div>
 							<div class="two fields">
 								<div class="field">
 									<label>Name</label>
@@ -336,8 +337,10 @@
 							</div>
 							
 							<div>
-								<button type="submit"id="submit-form" class="ui button">Submit</button>
+								<button type="submit"id="submit-form" class="ui submit button">Submit</button>
 							</div>
+
+							<div class="ui error message"></div>
 							
 						</form>
 					</div>
@@ -391,16 +394,67 @@
 
 			$('#submit-form').on('click', function(e) {
 			e.preventDefault();
-			console.log('click');
-			var jqxhr = $.ajax({
-				url: url,
-				method: "GET",
-				dataType: "json",
-				data: $form.serializeObject()
-			}).success(
-				// do something
-			);
+			$('.ui.form').form('validate form');
+			if ($('.ui.form').form('is valid')) {
+				$(this).addClass('loading');
+				var jqxhr = $.ajax({
+					url: url,
+					method: "GET",
+					dataType: "json",
+					data: $form.serializeObject(),
+					success: function() {
+						$('#contact .ui.message').show();
+						$('#contact .ui.message.error').remove();
+						$form.find("input[type=text], textarea").val("");
+						$('#submit-form').removeClass('loading');
+					}
+				});
+			}
 			})
+
+			$('.ui.form')
+	.form({
+	  on: 'blur',
+	  fields: {
+		name: {
+		  identifier: 'Name',
+		  rules: [
+			{
+			  type   : 'empty',
+			  prompt : 'Please enter your name'
+			}
+		  ]
+		},
+		Email: {
+		  identifier: 'Email',
+		  rules: [
+			{
+			  type   : 'empty',
+			  prompt : 'Please enter your email'
+			}
+		  ]
+		},
+		Subject: {
+		  identifier: 'Subject',
+		  rules: [
+			{
+			  type   : 'empty',
+			  prompt : 'Please enter a subject'
+			}
+		  ]
+		},
+		Message: {
+		  identifier: 'Message',
+		  rules: [
+			{
+			  type   : 'empty',
+			  prompt : 'Please enter your messsage'
+			}
+		  ]
+		},
+	  }
+	})
+  ;
 		</script>
   </body>
 </html>
